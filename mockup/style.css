@@ -53,16 +53,18 @@ p {text-align: center;
   color: white;
 }
 
+
+
 #sec_six{
   background-color:#1B1E25;
   height: 100vh;
   font-size: 60px;
   font-family: Helvetica, Arial, sans-serif;
   padding-top: 100px;
-  padding-left: 140px;
-  padding-right: 50px;
+  /* padding-left: 140px; */
+  /* padding-right: 50px; */
   padding-bottom: 200px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -184,65 +186,66 @@ text-align: left;
 
 .title {
   float: center;
-  width: 100px;
+  /* width: 100px; */
   text-align: center;
   padding-bottom: 10px;
 }
 
 
-
+.flexbox {
+  display: flex;
+}
 
 
 .form_input{
   font-size: 20px;
-  font-family: Helvetica; serif;
+  display: inline-flex;
+  font-family: Helvetica;
+  serif;
   padding-top: 8px;
-  width: 450px;
-  padding-left: 250px;
-  margin: 5px;
+  width: 45%;
+  /* padding-left: 250px; */
+  margin: 0;
   background-color: #1B1E25;
 }
 
 .form_input input {
-  width: 30%;
+  width: 100%;
   height: 20%;
   padding-top: 2em;
   padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 12em;
+  /* padding-left: 2em; */
+  /* padding-right: 12em; */
   background-color: #1B1E25;
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: Helvetica; serif;
+  font-family: Helvetica;
+  serif;
   font-size: 20px;
   color: #fff;
 }
 
-#name {
-  float: right;
-  width: 70%;
-  padding-right: 15em;
-  margin-right: 2em;
-  margin-left: 10em;
 
+.form_input p{
+  padding-left: 5%
+
+}
+
+
+
+#name {
+  width: 70%;
+  padding-left: 15%;
 }
 
 #email{
-  float: right;
-  width: 70%;
-  padding-right: 15em;
-  margin-right: 2em;
-  margin-left: 10em;
+  width: 35%;
 }
 
-#phonenumber{
-  float: right;
-  width: 70%;
-  padding-right: 15em;
-  margin-left: 10em;
-  margin-right: 2em;
-  padding-left: 15em;
+#phone_number{
+  width: 35%;
+  padding-left: 15%;
 }
 
 .form_input textarea{
@@ -268,10 +271,4 @@ footer p{
   font-weight: lighter;
   font-size: 42px;
   text-align: center;
-}
-
-.flexbox {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
 }
